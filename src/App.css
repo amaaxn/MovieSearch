@@ -1,0 +1,123 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Main App Styling */
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styling (Search & Back) */
+.search-bar button,
+.back-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #23113d;  /* Dark Purple */
+  transition: background-color 0.3s ease;  /* Smooth transition */
+}
+
+.search-bar button:hover,
+.back-button:hover {
+  background-color: #9b59b6;  /* Light Purple */
+}
+
+/* Movie List Layout (Flexbox) */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Center movie cards horizontally */
+  gap: 20px;  /* Space between movie cards */
+  padding: 20px;
+}
+
+/* Individual Movie Card Styling */
+.movie-card {
+  background-color: #1d1d1d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;  /* Smooth hover effect */
+  width: 250px;  /* Fixed width for movie card */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);  /* Slight zoom-in effect on hover */
+}
+
+/* Movie Poster Image Styling */
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Movie Title and Info Styling */
+.movie-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Back Button Styling */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #23113d;  /* Dark Purple */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button:hover {
+  background-color: #9b59b6;  /* Light Purple */
+}
